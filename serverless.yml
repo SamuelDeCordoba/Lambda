@@ -1,0 +1,26 @@
+service: lambda
+frameworkVersion: '3'
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /hola
+          method: get
+          
+  hola_mundo:  # Nueva función
+    handler: handler.hola_mundo
+    events:
+      - http:
+          path: hola-mundo
+          method: get        
+
+
+#jeje
