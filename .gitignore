@@ -17,4 +17,31 @@ var/
 *.egg
 
 # Serverless directories
-.serverless
+.serverless/
+
+# Node.js dependencies
+node_modules/
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+.env.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
